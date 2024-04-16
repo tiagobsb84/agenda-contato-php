@@ -1,0 +1,18 @@
+/* importar o framework bootstrap */
+@import 'bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(83, 53, 72);
+}
+
+/* HOME */
+.titulo {
+    color: rgb(37, 193, 247);
+    text-align: center;
+}
