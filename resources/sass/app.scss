@@ -8,11 +8,37 @@
 }
 
 body {
-    background-color: rgb(83, 53, 72);
+    background-color: rgb(27, 13, 22);
 }
 
 /* HOME */
+.home {
+    max-width: 570px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .titulo {
     color: rgb(37, 193, 247);
-    text-align: center;
+    margin-bottom: 4rem;
 }
+
+.botao-acessa-home {
+    background-color: rgb(37, 193, 247);
+    border: none;
+    padding: 14px;
+    border-radius: 1rem;
+    font-weight: bold;
+    margin-top: 3rem;
+
+    transition: .5s;
+}
+
+.botao-acessa-home:hover {
+    opacity: .5;
+}
+
+

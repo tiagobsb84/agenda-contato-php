@@ -9,9 +9,10 @@
         <title>Laravel</title>       
     </head>
     <body >
-        <div class="container">
+        <div class="container home">
             <h1 class="titulo">Agenda Telefônica</h1>
-            <button class="btn btn-success btn-sm">adicionar</button>
+            <img class="imagem-home" src="img/img-agenda.svg" alt="imagem de uma agenda telefônica">
+            <button class="botao-acessa-home">ACESSAR</button>
         </div>
     </body>
 </html>
