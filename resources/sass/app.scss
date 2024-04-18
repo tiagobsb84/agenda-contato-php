@@ -14,14 +14,14 @@ body {
 /* HOME */
 .home {
     max-width: 570px;
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.titulo {
+.titulo, .titulo-contato {
     color: rgb(37, 193, 247);
     margin-bottom: 4rem;
 }
@@ -39,6 +39,39 @@ body {
 
 .botao-acessa-home:hover {
     opacity: .5;
+}
+
+/* CONTATOS */
+.contato {
+    max-width: 570px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pesquisa-adiciona-contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.campo-pesquisa-contato {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.conteudo-lista-contato {
+    width: 100%;
+}
+
+.lista-contato {
+    margin-top: 2rem;
+    height: 300px;
+    overflow: scroll;
 }
 
 

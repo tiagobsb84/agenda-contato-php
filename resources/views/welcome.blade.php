@@ -12,7 +12,7 @@
         <div class="container home">
             <h1 class="titulo">Agenda Telefônica</h1>
             <img class="imagem-home" src="img/img-agenda.svg" alt="imagem de uma agenda telefônica">
-            <button class="botao-acessa-home">ACESSAR</button>
+            <a href="/lista" class="botao-acessa-home">ACESSAR</a>
         </div>
     </body>
 </html>
