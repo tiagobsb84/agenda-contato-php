@@ -14,16 +14,16 @@ body {
 /* HOME */
 .home {
     max-width: 570px;
-    max-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.titulo, .titulo-contato {
+.titulo, .titulo-contato, .titulo-formulario {
     color: rgb(37, 193, 247);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .botao-acessa-home {
@@ -74,4 +74,25 @@ body {
     overflow: scroll;
 }
 
+/* FORMULARIO ADICIONAR */
+.formulario {
+    max-width: 570px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.conteudo-formulario {
+    width: 100%;
+}
+
+.formulario-adicionar label {
+    color: rgb(37, 193, 247);
+}
+
+.formulario-adicionar input {
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.4rem;
+}
