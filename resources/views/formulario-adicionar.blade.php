@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends('layouts.main')
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+@section('title', 'Novo contato')
 
-    <title>Adicionar Novo Contato</title>
-</head>
-<body>
+@section('content')
     <div class="container formulario">
         <div class="conteudo-formulario">
             <h1 class="titulo-formulario">Novo Contato</h1>
-            <form action="" method="POST" class="d-flex flex-column formulario-adicionar" >
+            <form action="/formulario/salvar" method="POST" class="d-flex flex-column formulario-adicionar" >
+                @csrf
                 <label for="name" class="form-label">Nome</label>
                 <input type="text" id="name">
                 <label for="email" class="form-label">Email</label>
@@ -27,5 +22,4 @@
             </form>
         </div>
     </div>
-</body>
-</html>
+@endsection

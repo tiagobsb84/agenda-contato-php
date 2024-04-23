@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 Route::get('/lista', [AgendaController::class, 'index']);
 Route::get('/formulario', [AgendaController::class, 'create']);
+Route::post('/formulario/salvar', [AgendaController::class, 'store']);

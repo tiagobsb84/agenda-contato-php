@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+@extends('layouts.main')
 
-    <title>Lista de Contato</title>
+@section('title', 'Lista de Contatos')
 
-</head>
-<body>
+@section('content')
     <div class="container contato">
         <h1 class="titulo-contato">Contatos</h1>
         <div class="pesquisa-adiciona-contato">
@@ -20,7 +13,7 @@
             <ul class="list-group list-group-flush lista-contato">
                 @foreach ($lista as $list)
                 <li class="list-group-item item-contato d-flex justify-content-between">
-                    {{ $list }}
+                    {{ $list->nome }}
                     <span>
                         <a href="">E</a>
                         <a href="">X</a>
@@ -30,5 +23,5 @@
             </ul>
         </div>
     </div>
-</body>
-</html>
+
+@endsection

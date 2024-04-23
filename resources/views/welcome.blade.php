@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+@extends('layouts.main')
 
-        <title>Laravel</title>       
-    </head>
-    <body >
+@section('title', 'Agenda de Contatos')
+
+@section('content')
         <div class="container home">
             <h1 class="titulo">Agenda Telefônica</h1>
             <img class="imagem-home" src="img/img-agenda.svg" alt="imagem de uma agenda telefônica">
             <a href="/lista" class="botao-acessa-home">ACESSAR</a>
         </div>
-    </body>
-</html>
+
+@endsection
